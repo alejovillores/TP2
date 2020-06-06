@@ -44,15 +44,11 @@ class Utils
 
 		//PRE:-
 		//POST : Muestra fallo y cantidad de vidas restantes.
-		void mostrarFallido(Ahorcado &palabra);
+		void mostrarPerdedor(Ahorcado &palabra);
 
 		//PRE:-
 		//POST : Muestra has ganado.
 		void mostrarGanador(Ahorcado &palabra);
-
-		//PRE:-
-		//POST : Muestra perdedor y despedida al jugador.
-		void mostrarPerdedor();
 
 		//PRE:-
 		//POST : Muestra las letras debloqueadas del juego.

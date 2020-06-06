@@ -7,9 +7,10 @@ using namespace std;
 
 class Vector
 {
+
     private: //Atributos
 
-        char* pLetras;
+        int* pLetras;
         int longitud;
 
     public: //Metodos

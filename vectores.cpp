@@ -3,16 +3,18 @@
 
 Vector::Vector(int _longitud){
     longitud = _longitud;
-    pLetras = new char[_longitud];
+    pLetras = new int[_longitud];
 }
 
 Vector::Vector(string palabra,int _longitud){
         longitud= _longitud;
-        pLetras = new char[_longitud];
+        pLetras = new int[_longitud];
     	for(int i = 0;i<longitud;i++ ){
             pLetras[i] = palabra[i];
         }
-        //cout<<"-AVISO-La direccion del puntero es: "<<pLetras<<endl;;
+        //Aclaracion.
+
+        cout<<"-AVISO-La direccion del puntero es: "<<pLetras<<endl;;
 }
 
 char Vector::getLetra(int posicion){
@@ -29,7 +31,7 @@ void Vector::mostrarElementos(){
 	}
 	else{
 		for(int i = 0; i<longitud;i++){
-        	cout<<" "<<pLetras[i];
+        	cout<<" "<<char(pLetras[i]);
     	}
 	}
 }
@@ -49,7 +51,7 @@ void Vector::agregarLetra(char letra){
 
 
 	int nueva_l = longitud+1;
-    char* pAux = new char[nueva_l];
+    int* pAux = new int[nueva_l];
     pAux[longitud]= letra;
 
 	if(longitud>0){

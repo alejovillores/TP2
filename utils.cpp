@@ -103,7 +103,7 @@ void Utils::mostrarGanador(Ahorcado &palabra){
 }
 
 
-void Utils::mostrarFallido(Ahorcado &palabra){
+void Utils::mostrarPerdedor(Ahorcado &palabra){
     cout<<"================================="<<endl;
 	cout<<"                                 "<<endl;
 	cout<<"           GAME OVER             "<<endl;

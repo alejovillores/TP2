@@ -1,5 +1,7 @@
 #include "ahorcado.h"
 #include<iostream>
+const int PALABRA  = 2 ;
+const int LETRA = 1 ;
 
 //Constructores
 Ahorcado::Ahorcado(string _palabra,int _longitud,int _intentos):palabra(_palabra,_longitud){
@@ -44,14 +46,14 @@ void Ahorcado::arriesgar(string _palabra){
 		}
 
 		if(!esIgual ){
-			quitarIntentos(2);
+			quitarIntentos(PALABRA);
 		}
 		else{
 			cambiarEstado();
 		}
 	}
 	else{
-		quitarIntentos(2);
+		quitarIntentos(PALABRA);
 	}
 }
 
@@ -68,7 +70,7 @@ void Ahorcado::arriesgar(char letra, Vector &letras){
 	else{
 		if(!estaLetras){
 			letras.agregarLetra(letra);
-			quitarIntentos(1);
+			quitarIntentos(LETRA);
 		}
 	}
 }
@@ -86,7 +88,7 @@ void Ahorcado::mostrarCoincidencias(Vector &vec){
                 }
             }
             if(siEsta){
-				cout<<" "<<palabra.getLetra(i)<<" ";
+				cout<<" "<<char(palabra.getLetra(i))<<" ";
 			}
             else{
 				cout<<" - ";

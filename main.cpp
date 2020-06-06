@@ -36,6 +36,7 @@ int main()
     //Ciclo de juego
 	while(palabra.getIntentos()>0 and !palabra.getEstado()){
 		string intentar;
+		system("cls");
 		utils.mostrarPantalla(letras,palabra);
 
 		cout<<"\nArriesgue: ";cin>>intentar;
@@ -55,7 +56,7 @@ int main()
 		utils.mostrarGanador(palabra);
 	}
 	else{
-		utils.mostrarFallido(palabra);
+		utils.mostrarPerdedor(palabra);
 	}
 	return 0;
 }

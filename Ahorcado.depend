@@ -1,0 +1,38 @@
+# depslib dependency file v1.0
+1589842128 source:c:\users\itenet\desktop\ahorcado\ahorcado.cpp
+	"ahorcado.h"
+	<iostream>
+
+1589842138 c:\users\itenet\desktop\ahorcado\ahorcado.h
+	"vectores.h"
+
+1590270550 c:\users\itenet\desktop\ahorcado\vectores.h
+	<string>
+
+1590007660 source:c:\users\itenet\desktop\ahorcado\main.cpp
+	<iostream>
+	"utils.h"
+
+1590007234 c:\users\itenet\desktop\ahorcado\utils.h
+	"ahorcado.h"
+
+1590006830 source:c:\users\itenet\desktop\ahorcado\utils.cpp
+	"utils.h"
+	<iostream>
+	<random>
+	<time.h>
+
+1590270758 source:c:\users\itenet\desktop\ahorcado\vectores.cpp
+	"vectores.h"
+	<iostream>
+
+1590419233 source:c:\users\itenet\documents\archivos de alejo\ahorcado\ahorcado.cpp
+	"ahorcado.h"
+	<iostream>
+
+1589842138 c:\users\itenet\documents\archivos de alejo\ahorcado\ahorcado.h
+	"vectores.h"
+
+1591053080 c:\users\itenet\documents\archivos de alejo\ahorcado\vectores.h
+	<string>
+
